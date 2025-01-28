@@ -1,3 +1,9 @@
+/* 구조
+* fun 함수 이름(변수명: 자료형): 반환할 자료형{
+*   return 값
+* }
+* */
+
 // 매개 변수와 반환 값이 있는 함수
 fun func1(name: String) : String{
     return "My name is $name"
@@ -8,6 +14,12 @@ fun func2() : Int {
     return 3*4
 }
 
+/* 구조
+* fun 함수 이름(변수명: 자료형){
+*   println(값)
+* }
+* */
+
 // 매개 변수만 있는 함수
 fun func3(name: String, num: Int){
     println("$name : $num")
@@ -17,12 +29,6 @@ fun func3(name: String, num: Int){
 fun func4() : Unit{
     println("Box Only")
 }
-
-/* 구조
-* fun 함수 이름(변수명: 자료형): 반환할 자료형{
-*   return 값
-* }
-* */
 
 fun main() {
 
