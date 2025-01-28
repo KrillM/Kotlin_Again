@@ -32,6 +32,7 @@ fun main(args: Array<String>){
     // 2. 문자형
     var g : Char = 'g'
     var h : String = "Hello"
+    println(h.get(1))
 
     println(g)
     println(h)
