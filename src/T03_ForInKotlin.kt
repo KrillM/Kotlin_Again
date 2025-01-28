@@ -1,11 +1,21 @@
 fun main(args: Array<String>){
 
     // range
-    var charRange : CharRange = 'A'..'H'
-    var numRange : IntRange = 1 until 10
+    var numRange1 : IntRange = 1 .. 10
+    var numRange2 : IntRange = 1 until 10
 
+    println(numRange1.contains(10))  // true
+    println(numRange2.contains(10))  // false
+
+    var charRange : CharRange = 'A'..'H'
     println(charRange.contains('H')) // true
-    println(numRange.contains(10))  // false
+
+    // ..
+    for(i in 1..10){
+        print(i)
+    }
+
+    println()
 
     // until
     for(u in 1 until 11){
@@ -22,7 +32,7 @@ fun main(args: Array<String>){
     println()
 
     // step
-    for(s in 2 .. 10 step 2){
+    for(s in 1 .. 10 step 2){
         print(s)
     }
 
