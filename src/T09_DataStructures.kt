@@ -1,8 +1,13 @@
 fun main() {
 
     // List
-    val list1 = listOf("Honshu", "Java", "Kotlin")
+    val list1 = listOf("Kotlin", "Java", "Kotlin")
     println(list1[2])
+
+    // Check datas through forEach
+    list1.forEach{
+        i -> println("$i")
+    }
 
     val list2 = mutableListOf("Honshu", "Java", "Kotlin")
     println(list2[0])
@@ -29,7 +34,11 @@ fun main() {
     val map1 = mapOf("name" to "krille", "age" to 22, "height" to 180)
     println(map1["name"])
 
-    val map2 = mutableMapOf("name" to "krille", "age" to 22, "height" to 180)
+    val map2 = mutableMapOf("name" to "krille", "age" to 22, "height" to 22)
+    map2.forEach{
+        i-> println("$i")
+    }
+
     println(map2["age"])
 
     // map 변경 방법 1
